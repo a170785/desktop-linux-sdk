@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ -z $TI_INSTALL_DIR ]
+then
+  TI_INSTALL_DIR=~/ti
+fi
+
+export C6X_GEN_INSTALL_PATH=$TI_TOOL_DIR/TI_CGT_C6000_7.2.4
+export PDK_INSTALL_PATH=$TI_TOOL_DIR/pdk_C6678_1_1_2_5
+
+export DESKTOP_LINUX_SDK_DIR=$(pwd)
+

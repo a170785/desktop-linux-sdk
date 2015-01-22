@@ -1,0 +1,1 @@
+cmd_/home/aav/magicA/desktop-linux-sdk/sdk/cmem/module/cmem_dev.ko := ld -r -m elf_i386 -T /usr/src/linux-headers-3.11.0-15-generic/scripts/module-common.lds --build-id  -o /home/aav/magicA/desktop-linux-sdk/sdk/cmem/module/cmem_dev.ko /home/aav/magicA/desktop-linux-sdk/sdk/cmem/module/cmem_dev.o /home/aav/magicA/desktop-linux-sdk/sdk/cmem/module/cmem_dev.mod.o

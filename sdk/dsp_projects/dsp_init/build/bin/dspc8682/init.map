@@ -1,0 +1,435 @@
+******************************************************************************
+               TMS320C6x Linker Unix v7.2.4                    
+******************************************************************************
+>> Linked Thu Mar 13 17:32:58 2014
+
+OUTPUT FILE NAME:   <bin/dspc8682/init.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 00860000
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  L2SRAM_0              00860000   00000100  00000080  00000080  RW X
+  L2SRAM_1              00860100   00000300  00000000  00000300  RW X
+  L2SRAM                00860400   0000fb00  0000b60a  000044f6  RW X
+  L2SRAM_INIT           0086ff00   00000100  00000008  000000f8  RW X
+  L1PSRAM               00e00000   00007fff  00000000  00007fff  RW X
+  L1DSRAM               00f00000   00007fff  00000000  00007fff  RW X
+  MSMCSRAM              0c000000   00200000  00000000  00200000  RW X
+  DDR3                  80000000   10000000  00000000  10000000  RW X
+
+
+SEGMENT ALLOCATION MAP
+
+run origin  load origin   length   init length attrs members
+----------  ----------- ---------- ----------- ----- -------
+00860000    00860000    00000080   00000080    r-x
+  00860000    00860000    00000080   00000080    r-x .text:_c_int00
+00860400    00860400    000061a0   000061a0    r-x
+  00860400    00860400    000061a0   000061a0    r-x .text
+008665a0    008665a0    00004000   00000000    rw-
+  008665a0    008665a0    00004000   00000000    rw- .stack
+0086a5a0    0086a5a0    00001318   00001318    rw-
+  0086a5a0    0086a5a0    00001318   00001318    rw- platform_lib
+0086b8c0    0086b8c0    0000003a   0000003a    r--
+  0086b8c0    0086b8c0    0000003a   0000003a    r-- .const
+0086b8fc    0086b8fc    00000020   0000001c    rw-
+  0086b8fc    0086b8fc    00000014   00000014    rw- .fardata
+  0086b910    0086b910    00000008   00000008    rw- .neardata
+  0086b918    0086b918    00000004   00000000    rw- .bss
+0086b91c    0086b91c    000000f8   000000f8    r--
+  0086b91c    0086b91c    000000f8   000000f8    r-- .cinit
+0086ff00    0086ff00    00000008   00000000    rw-
+  0086ff00    0086ff00    00000008   00000000    rw- .init_config
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.text:_c_int00 
+*          0    00860000    00000080     
+                  00860000    00000080     rts6600_elf.lib : boot.obj (.text:_c_int00)
+
+.text      0    00860400    000061a0     
+                  00860400    000009c0     main.obj (.text)
+                  00860dc0    00000500     ti.platform.dspc8682.lite.lib : dspc8682.lite.oe66 (.text:DDR3Init)
+                  008612c0    00000360                                   : dspc8682.lite.oe66 (.text:CorePllcHwSetup)
+                  00861620    00000360                                   : platform.lite.oe66 (.text:platform_init)
+                  00861980    00000340                                   : evm66x_nand.lite.oe66 (.text:NandCorrect4bitECC)
+                  00861cc0    00000300                                   : dspc8682.lite.oe66 (.text:CSL_EMIF4F_SetSDRAMConfig)
+                  00861fc0    000002e0                                   : evmc66x_i2c_eeprom.lite.oe66 (.text:i2cEepromWriteBlock)
+                  008622a0    00000220                                   : evm66x_nand.lite.oe66 (.text:readNandPage)
+                  008624c0    00000200                                   : dspc8682.lite.oe66 (.text:SetPaPllConfig)
+                  008626c0    00000200                                   : evmc66x_i2c_eeprom.lite.oe66 (.text:i2cEepromRead)
+                  008628c0    000001c0                                   : evmc66x_spi.lite.oe66 (.text:spi_claim)
+                  00862a80    000001a0                                   : platform.lite.oe66 (.text:platform_device_open)
+                  00862c20    00000180                                   : dspc8682.lite.oe66 (.text:SetDDR3PllConfig)
+                  00862da0    00000180     rts6600_elf.lib : copy_decompress_rle.obj (.text:__TI_decompress_rle_core)
+                  00862f20    00000180                     : autoinit.obj (.text:_auto_init_elf)
+                  008630a0    00000160     ti.platform.dspc8682.lite.lib : evmc66x_uart.lite.oe66 (.text:UartInit)
+                  00863200    00000160                                   : platform.lite.oe66 (.text:platform_device_read)
+                  00863360    00000140                                   : dspc8682.lite.oe66 (.text:CSL_EMIF4F_GetSDRAMConfig)
+                  008634a0    00000140                                   : dspc8682.lite.oe66 (.text:CSL_EMIF4F_SetTiming1Config)
+                  008635e0    00000140                                   : dspc8682.lite.oe66 (.text:CSL_EMIF4F_SetTiming3Config)
+                  00863720    00000140                                   : evm66x_nand.lite.oe66 (.text:NandCalculate4bitECC)
+                  00863860    00000140                                   : platform.lite.oe66 (.text:platform_offset_to_blocknpage)
+                  008639a0    00000140                                   : evmc66x_spi.lite.oe66 (.text:spi_xfer)
+                  00863ae0    00000120                                   : dspc8682.lite.oe66 (.text:CSL_EMIF4F_SetOutputImpedanceConfig)
+                  00863c00    00000120                                   : dspc8682.lite.oe66 (.text:CSL_EMIF4F_SetTiming2Config)
+                  00863d20    00000120                                   : dspc8682.lite.oe66 (.text:CSL_XMC_setXMPAXL)
+                  00863e40    00000120                                   : evm66x_nand.lite.oe66 (.text:NandGetDetails)
+                  00863f60    00000120                                   : evm66x_nand.lite.oe66 (.text:NandReadSpareArea)
+                  00864080    00000120                                   : platform.lite.oe66 (.text:platform_memory_test)
+                  008641a0    00000100                                   : dspc8682.lite.oe66 (.text:CorePllcGetHwSetup)
+                  008642a0    00000100                                   : dspc8682_phy.lite.oe66 (.text:Init_SGMII)
+                  008643a0    00000100                                   : dspc8682_phy.lite.oe66 (.text:Init_SGMII_DSP7)
+                  008644a0    00000100                                   : evm66x_nand.lite.oe66 (.text:NandConfig)
+                  008645a0    00000100     rts6600_elf.lib : cpy_tbl.obj (.text:copy_in)
+                  008646a0    000000e0     ti.platform.dspc8682.lite.lib : dspc8682.lite.oe66 (.text:CSL_EMIF4F_SetPowerMgmtConfig)
+                  00864780    000000e0                                   : dspc8682_phy.lite.oe66 (.text:CSL_SGMII_setAdvAbility)
+                  00864860    000000e0     rts6600_elf.lib : divi.obj (.text:__divi)
+                  00864940    000000e0                     : copy_zero_init.obj (.text:decompress:ZI:__TI_zero_init)
+                  00864a20    000000e0                     : exit.obj (.text:exit)
+                  00864b00    000000e0                     : memset.obj (.text:memset)
+                  00864be0    000000c0     ti.platform.dspc8682.lite.lib : dspc8682_phy.lite.oe66 (.text:CSL_SGMII_getStatus)
+                  00864ca0    000000c0     rts6600_elf.lib : divu.obj (.text:__divu)
+                  00864d60    000000a0     ti.platform.dspc8682.lite.lib : dspc8682.lite.oe66 (.text:CSL_EMIF4F_SetLevelingControlInfo)
+                  00864e00    000000a0                                   : dspc8682.lite.oe66 (.text:CSL_EMIF4F_SetLevelingRampControlInfo)
+                  00864ea0    000000a0                                   : evm66x_nand.lite.oe66 (.text:NandOpenDevice)
+                  00864f40    000000a0                                   : dspc8682.lite.oe66 (.text:PowerUpDomains)
+                  00864fe0    000000a0     rts6600_elf.lib : remu.obj (.text:__remu)
+                  00865080    000000a0     ti.platform.dspc8682.lite.lib : dspc8682_phy.lite.oe66 (.text:configSerdes)
+                  00865120    000000a0     rts6600_elf.lib : memcpy64.obj (.text:memcpy)
+                  008651c0    000000a0     ti.platform.dspc8682.lite.lib : evmc66x_nor.lite.oe66 (.text:nor_get_details)
+                  00865260    000000a0                                   : evmc66x_nor.lite.oe66 (.text:nor_read)
+                  00865300    000000a0                                   : platform.lite.oe66 (.text:platform_device_close)
+                  008653a0    00000080                                   : dspc8682.lite.oe66 (.text:CSL_EMIF4F_SetPhyControl)
+                  00865420    00000080                                   : evm66x_nand.lite.oe66 (.text:NandRead4bitECC)
+                  008654a0    00000080                                   : evmc66x_uart.lite.oe66 (.text:UartSetBaudRate)
+                  00865520    00000080                                   : platform.lite.oe66 (.text:ddr_param_read)
+                  008655a0    00000080                                   : evm66x_i2c.lite.oe66 (.text:evmI2CInit)
+                  00865620    00000080                                   : evmc66x_nor.lite.oe66 (.text:nor_init)
+                  008656a0    00000080                                   : evmc66x_spi.lite.oe66 (.text:spi_cmd)
+                  00865720    00000080                                   : evmc66x_spi.lite.oe66 (.text:spi_cmd_read)
+                  008657a0    00000060                                   : dspc8682_phy.lite.oe66 (.text:CSL_BootCfgSetSGMIIRxConfig)
+                  00865800    00000060                                   : dspc8682_phy.lite.oe66 (.text:CSL_BootCfgSetSGMIITxConfig)
+                  00865860    00000060                                   : platform.lite.oe66 (.text:MSMC_enableEDC)
+                  008658c0    00000060                                   : evm66x_nand.lite.oe66 (.text:NandReadDataBytes)
+                  00865920    00000060                                   : evm66x_nand.lite.oe66 (.text:NandWaitRdy)
+                  00865980    00000060                                   : platform.lite.oe66 (.text:enableL1PEDC)
+                  008659e0    00000060                                   : platform.lite.oe66 (.text:enableL2EDC)
+                  00865a40    00000060                                   : evmc66x_i2c_eeprom.lite.oe66 (.text:i2cDelay)
+                  00865aa0    00000060                                   : platform.lite.oe66 (.text:platform_delay)
+                  00865b00    00000060                                   : platform.lite.oe66 (.text:platform_get_frequency)
+                  00865b60    00000060                                   : dspc8682.lite.oe66 (.text:xmc_setup)
+                  00865bc0    00000040                                   : dspc8682.lite.oe66 (.text:CSL_BootCfgGetDDRConfig)
+                  00865c00    00000040                                   : dspc8682.lite.oe66 (.text:CSL_BootCfgSetDDRConfig)
+                  00865c40    00000040                                   : dspc8682_phy.lite.oe66 (.text:CSL_BootCfgSetSGMIIConfigPLL)
+                  00865c80    00000040                                   : dspc8682.lite.oe66 (.text:CSL_BootCfgUnlockKicker)
+                  00865cc0    00000040                                   : dspc8682_phy.lite.oe66 (.text:CSL_BootCfgUnlockKicker)
+                  00865d00    00000040                                   : dspc8682.lite.oe66 (.text:CSL_EMIF4F_EnableInitRefresh)
+                  00865d40    00000040                                   : dspc8682.lite.oe66 (.text:CSL_EMIF4F_GetPhyControl)
+                  00865d80    00000040                                   : dspc8682.lite.oe66 (.text:CSL_EMIF4F_SetRefreshRate)
+                  00865dc0    00000040                                   : dspc8682.lite.oe66 (.text:CSL_PSC_enablePowerDomain)
+                  00865e00    00000040                                   : evm66x_nand.lite.oe66 (.text:CSL_PSC_enablePowerDomain)
+                  00865e40    00000040                                   : evm66x_nand.lite.oe66 (.text:CSL_PSC_getModuleState)
+                  00865e80    00000040                                   : dspc8682.lite.oe66 (.text:CSL_PSC_isStateTransitionDone)
+                  00865ec0    00000040                                   : evm66x_nand.lite.oe66 (.text:CSL_PSC_isStateTransitionDone)
+                  00865f00    00000040                                   : dspc8682.lite.oe66 (.text:CSL_PSC_setModuleNextState)
+                  00865f40    00000040                                   : evm66x_nand.lite.oe66 (.text:CSL_PSC_setModuleNextState)
+                  00865f80    00000040                                   : dspc8682.lite.oe66 (.text:CSL_PSC_startStateTransition)
+                  00865fc0    00000040                                   : evm66x_nand.lite.oe66 (.text:CSL_PSC_startStateTransition)
+                  00866000    00000040                                   : dspc8682_phy.lite.oe66 (.text:CSL_SGMII_disableMasterMode)
+                  00866040    00000040                                   : dspc8682_phy.lite.oe66 (.text:CSL_SGMII_doSoftReset)
+                  00866080    00000040                                   : dspc8682_phy.lite.oe66 (.text:CSL_SGMII_enableAutoNegotiation)
+                  008660c0    00000040                                   : dspc8682_phy.lite.oe66 (.text:CSL_SGMII_enableMasterMode)
+                  00866100    00000040                                   : dspc8682_phy.lite.oe66 (.text:CSL_SGMII_endRxTxSoftReset)
+                  00866140    00000040                                   : dspc8682_phy.lite.oe66 (.text:CSL_SGMII_getSoftResetStatus)
+                  00866180    00000040                                   : dspc8682_phy.lite.oe66 (.text:CSL_SGMII_startRxTxSoftReset)
+                  008661c0    00000040                                   : dspc8682.lite.oe66 (.text:CSL_XMC_setXMPAXH)
+                  00866200    00000040                                   : evm66x_nand.lite.oe66 (.text:NandAleSet)
+                  00866240    00000040                                   : evm66x_nand.lite.oe66 (.text:NandCmdSet)
+                  00866280    00000040                                   : evm66x_nand.lite.oe66 (.text:NandReadDataByte)
+                  008662c0    00000040     rts6600_elf.lib : args_main.obj (.text:_args_main)
+                  00866300    00000040     ti.platform.dspc8682.lite.lib : platform.lite.oe66 (.text:platform_delaycycles)
+                  00866340    00000040                                   : platform.lite.oe66 (.text:platform_uart_init)
+                  00866380    00000040                                   : platform.lite.oe66 (.text:platform_uart_set_baudrate)
+                  008663c0    00000040                                   : dspc8682.lite.oe66 (.text:pll_delay)
+                  00866400    00000040                                   : evmc66x_spi.lite.oe66 (.text:spi_delay)
+                  00866440    00000020                                   : platform.lite.oe66 (.text:CSL_chipReadTSCL)
+                  00866460    00000020                                   : platform.lite.oe66 (.text:CSL_chipWriteTSCL)
+                  00866480    00000020     rts6600_elf.lib : tdeh_init.obj (.text:__tdeh_init)
+                  008664a0    00000020                     : _lock.obj (.text:_nop)
+                  008664c0    00000020                     : exit.obj (.text:abort)
+                  008664e0    00000020                     : copy_decompress_none.obj (.text:decompress:none:__TI_decompress_none)
+                  00866500    00000020                     : copy_decompress_rle.obj (.text:decompress:rle24:__TI_decompress_rle24)
+                  00866520    00000020     ti.platform.dspc8682.lite.lib : platform.lite.oe66 (.text:enableEDCL2EDCEN)
+                  00866540    00000020     main.obj (.text:hwWbInvL1DInline)
+                  00866560    00000020     ti.platform.dspc8682.lite.lib : evm66x_nand.lite.oe66 (.text:nandInit)
+                  00866580    00000020                                   : evmc66x_spi.lite.oe66 (.text:spi_release)
+
+.stack     0    008665a0    00004000     UNINITIALIZED
+                  008665a0    00000008     rts6600_elf.lib : boot.obj (.stack)
+                  008665a8    00003ff8     --HOLE--
+
+platform_lib 
+*          0    0086a5a0    00001318     
+                  0086a5a0    00001000     ti.platform.dspc8682.lite.lib : platform.lite.oe66 (platform_lib:uninit) [fill = 0]
+                  0086b5a0    00000210                                   : evm66x_nand.lite.oe66 (platform_lib) [fill = 0]
+                  0086b7b0    00000108                                   : platform.lite.oe66 (platform_lib:init)
+
+.const     0    0086b8c0    0000003a     
+                  0086b8c0    00000024     ti.platform.dspc8682.lite.lib : platform.lite.oe66 (.const)
+                  0086b8e4    0000000c     --HOLE-- [fill = 0]
+                  0086b8f0    0000000a                                   : evm66x_nand.lite.oe66 (.const:$P$T0$1)
+
+.fardata   0    0086b8fc    00000014     
+                  0086b8fc    0000000c     rts6600_elf.lib : exit.obj (.fardata)
+                  0086b908    00000008                     : _lock.obj (.fardata)
+
+.neardata 
+*          0    0086b910    00000008     
+                  0086b910    00000008     ti.platform.dspc8682.lite.lib : platform.lite.oe66 (.neardata)
+
+.rodata    0    0086b918    00000000     UNINITIALIZED
+
+.bss       0    0086b918    00000004     UNINITIALIZED
+                  0086b918    00000004     ti.platform.dspc8682.lite.lib : evmc66x_spi.lite.oe66 (.bss)
+
+.cinit     0    0086b91c    000000f8     
+                  0086b91c    0000009f     (.cinit.platform_lib.load) [load image, compression = rle]
+                  0086b9bb    00000001     --HOLE-- [fill = 0]
+                  0086b9bc    00000015     (.cinit..fardata.load) [load image, compression = rle]
+                  0086b9d1    00000003     --HOLE-- [fill = 0]
+                  0086b9d4    0000000c     (__TI_handler_table)
+                  0086b9e0    00000009     (.cinit..neardata.load) [load image, compression = rle]
+                  0086b9e9    00000003     --HOLE-- [fill = 0]
+                  0086b9ec    00000008     (.cinit..bss.load) [load image, compression = zero_init]
+                  0086b9f4    00000020     (__TI_cinit_table)
+
+.init_config 
+*          0    0086ff00    00000008     UNINITIALIZED
+                  0086ff00    00000008     main.obj (.init_config)
+
+
+LINKER GENERATED COPY TABLES
+
+__TI_cinit_table @ 0086b9f4 records: 4, size/record: 8, table size: 32
+	platform_lib: load addr=0086b91c, load size=0000009f bytes, run addr=0086a5a0, run size=00001318 bytes, compression=rle
+	.fardata: load addr=0086b9bc, load size=00000015 bytes, run addr=0086b8fc, run size=00000014 bytes, compression=rle
+	.neardata: load addr=0086b9e0, load size=00000009 bytes, run addr=0086b910, run size=00000008 bytes, compression=rle
+	.bss: load addr=0086b9ec, load size=00000008 bytes, run addr=0086b918, run size=00000004 bytes, compression=zero_init
+
+
+LINKER GENERATED HANDLER TABLE
+
+__TI_handler_table @ 0086b9d4 records: 3, size/record: 4, table size: 12
+	index: 0, handler: __TI_decompress_rle24
+	index: 1, handler: __TI_decompress_none
+	index: 2, handler: __TI_zero_init
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+008664c0   C$$EXIT
+008641a0   CorePllcGetHwSetup
+008612c0   CorePllcHwSetup
+00860dc0   DDR3Init
+00860a98   Init_MAC
+008642a0   Init_SGMII
+008643a0   Init_SGMII_DSP7
+00860a18   Init_Switch
+00863e40   NandGetDetails
+00863f60   NandReadSpareArea
+00864f40   PowerUpDomains
+00862c20   SetDDR3PllConfig
+008624c0   SetPaPllConfig
+008630a0   UartInit
+008654a0   UartSetBaudRate
+0086b9f4   __TI_CINIT_Base
+0086ba14   __TI_CINIT_Limit
+0086b9d4   __TI_Handler_Table_Base
+0086b9e0   __TI_Handler_Table_Limit
+0086a5a0   __TI_STACK_END
+00004000   __TI_STACK_SIZE
+0086b910   __TI_STATIC_BASE
+00000001   __TI_args_main
+008664e0   __TI_decompress_none
+00866500   __TI_decompress_rle24
+0086b904   __TI_enable_exit_profile_output
+ffffffff   __TI_pprof_out_hndl
+ffffffff   __TI_prof_data_size
+ffffffff   __TI_prof_data_start
+00864940   __TI_zero_init
+ffffffff   __binit__
+00864860   __c6xabi_divi
+00864ca0   __c6xabi_divu
+00864fe0   __c6xabi_remu
+ffffffff   __c_args__
+00864860   __divi
+00864ca0   __divu
+00864fe0   __remu
+00866480   __tdeh_init
+008662c0   _args_main
+00862f20   _auto_init_elf
+00860000   _c_int00
+0086b8fc   _cleanup_ptr
+0086b900   _dtors_ptr
+0086b908   _lock
+008664a0   _nop
+008665a0   _stack
+0086b90c   _unlock
+008664c0   abort
+ffffffff   binit
+00865080   configSerdes
+008645a0   copy_in
+00865520   ddr_param_read
+0086b8b0   emac_port_mode
+008655a0   evmI2CInit
+00864a20   exit
+0086b83c   gDeviceEeprom0
+0086b874   gDeviceEeprom1
+0086b7cc   gDeviceNand
+0086a5a0   gDeviceNandBBlist
+0086b804   gDeviceNor
+00860b00   hwIntctlRoute
+00866540   hwWbInvL1DInline
+008626c0   i2cEepromRead
+00861fc0   i2cEepromWriteBlock
+00860bb4   idle_till_wakeup
+0086ff00   init_config
+00860cb4   main
+00865120   memcpy
+00864b00   memset
+00866560   nandInit
+008651c0   nor_get_details
+00865620   nor_init
+00865260   nor_read
+00865aa0   platform_delay
+00866300   platform_delaycycles
+00865300   platform_device_close
+00862a80   platform_device_open
+00863200   platform_device_read
+0086b910   platform_errno
+00861620   platform_init
+0086b914   platform_init_return_code
+00863860   platform_offset_to_blocknpage
+00866340   platform_uart_init
+00866380   platform_uart_set_baudrate
+008622a0   readNandPage
+008628c0   spi_claim
+008656a0   spi_cmd
+00865720   spi_cmd_read
+00866580   spi_release
+008639a0   spi_xfer
+008609e0   wait_and_start
+00860c50   wait_for_interrupt
+00865b60   xmc_setup
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000001   __TI_args_main
+00004000   __TI_STACK_SIZE
+00860000   _c_int00
+008609e0   wait_and_start
+00860a18   Init_Switch
+00860a98   Init_MAC
+00860b00   hwIntctlRoute
+00860bb4   idle_till_wakeup
+00860c50   wait_for_interrupt
+00860cb4   main
+00860dc0   DDR3Init
+008612c0   CorePllcHwSetup
+00861620   platform_init
+00861fc0   i2cEepromWriteBlock
+008622a0   readNandPage
+008624c0   SetPaPllConfig
+008626c0   i2cEepromRead
+008628c0   spi_claim
+00862a80   platform_device_open
+00862c20   SetDDR3PllConfig
+00862f20   _auto_init_elf
+008630a0   UartInit
+00863200   platform_device_read
+00863860   platform_offset_to_blocknpage
+008639a0   spi_xfer
+00863e40   NandGetDetails
+00863f60   NandReadSpareArea
+008641a0   CorePllcGetHwSetup
+008642a0   Init_SGMII
+008643a0   Init_SGMII_DSP7
+008645a0   copy_in
+00864860   __c6xabi_divi
+00864860   __divi
+00864940   __TI_zero_init
+00864a20   exit
+00864b00   memset
+00864ca0   __c6xabi_divu
+00864ca0   __divu
+00864f40   PowerUpDomains
+00864fe0   __c6xabi_remu
+00864fe0   __remu
+00865080   configSerdes
+00865120   memcpy
+008651c0   nor_get_details
+00865260   nor_read
+00865300   platform_device_close
+008654a0   UartSetBaudRate
+00865520   ddr_param_read
+008655a0   evmI2CInit
+00865620   nor_init
+008656a0   spi_cmd
+00865720   spi_cmd_read
+00865aa0   platform_delay
+00865b60   xmc_setup
+008662c0   _args_main
+00866300   platform_delaycycles
+00866340   platform_uart_init
+00866380   platform_uart_set_baudrate
+00866480   __tdeh_init
+008664a0   _nop
+008664c0   C$$EXIT
+008664c0   abort
+008664e0   __TI_decompress_none
+00866500   __TI_decompress_rle24
+00866540   hwWbInvL1DInline
+00866560   nandInit
+00866580   spi_release
+008665a0   _stack
+0086a5a0   __TI_STACK_END
+0086a5a0   gDeviceNandBBlist
+0086b7cc   gDeviceNand
+0086b804   gDeviceNor
+0086b83c   gDeviceEeprom0
+0086b874   gDeviceEeprom1
+0086b8b0   emac_port_mode
+0086b8fc   _cleanup_ptr
+0086b900   _dtors_ptr
+0086b904   __TI_enable_exit_profile_output
+0086b908   _lock
+0086b90c   _unlock
+0086b910   __TI_STATIC_BASE
+0086b910   platform_errno
+0086b914   platform_init_return_code
+0086b9d4   __TI_Handler_Table_Base
+0086b9e0   __TI_Handler_Table_Limit
+0086b9f4   __TI_CINIT_Base
+0086ba14   __TI_CINIT_Limit
+0086ff00   init_config
+ffffffff   __TI_pprof_out_hndl
+ffffffff   __TI_prof_data_size
+ffffffff   __TI_prof_data_start
+ffffffff   __binit__
+ffffffff   __c_args__
+ffffffff   binit
+
+[94 symbols]

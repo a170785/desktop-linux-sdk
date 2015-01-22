@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?fileVersion 3.1.0?>
+
+<ManagedProjectBuildInfo>
+<project id="platform_utils_evm6474l.com.ti.ccstudio.buildDefinitions.C6000.ProjectType.812893320" name="C6000" projectType="com.ti.ccstudio.buildDefinitions.C6000.ProjectType">
+<configuration artifactExtension="lib" artifactName="../../../lib/platform_utils_dspc8682" description="" id="com.ti.ccstudio.buildDefinitions.C6000.Debug.1994235648" name="Debug" parent="com.ti.ccstudio.buildDefinitions.C6000.Debug">
+<toolChain id="com.ti.ccstudio.buildDefinitions.C6000_7.2.libraryDebugToolchain.2013243436" name="TI Code Generation Tools" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.libraryDebugToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C6000_7.2.library.librarianDebug.899230987">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.1553157335" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=com.ti.ccstudio.deviceModel.C6000.CustomC6000Device"/>
+<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
+<listOptionValue builtIn="false" value="OUTPUT_FORMAT=ELF"/>
+<listOptionValue builtIn="false" value="CCS_MBS_VERSION=4.2.0"/>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE="/>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY="/>
+<listOptionValue builtIn="false" value="IS_ELF=false"/>
+<listOptionValue builtIn="false" value="PROJECT_KIND=com.ti.ccstudio.managedbuild.core.ProjectKind_StaticLibrary"/>
+<listOptionValue builtIn="false" value="OUTPUT_TYPE=staticLibrary"/>
+<listOptionValue builtIn="false" value="IS_ASSEMBLY_ONLY=false"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.1583227547" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="7.2.0B1" valueType="string"/>
+<tool id="com.ti.ccstudio.buildDefinitions.C6000_7.2.library.compilerDebug.1594609360" name="C6000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.library.compilerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.SILICON_VERSION.908130105" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.SILICON_VERSION" value="6600" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.DEFINE.589742699" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.DEFINE"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.UNDEFINE.1113610835" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.UNDEFINE" valueType="stringList">
+<listOptionValue builtIn="false" value="PLATFORM_DEBUG"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.INCLUDE_PATH.722921897" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.DIAG_WARNING.37647568" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.DIAG_WARNING" valueType="stringList">
+<listOptionValue builtIn="false" value="225"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.ABI.931640591" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.ABI" value="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.ABI.eabi" valueType="enumerated"/>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.C6000_7.2.library.librarianDebug.899230987" name="C6000 Archiver" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.library.librarianDebug"/>
+<macros expandEnvironmentMacros="true"/>
+</toolChain>
+</configuration>
+<configuration artifactExtension="lib" artifactName="../../../lib/platform_utils_dspc8682" description="" id="com.ti.ccstudio.buildDefinitions.C6000.Release.1360140919" name="Release" parent="com.ti.ccstudio.buildDefinitions.C6000.Release">
+<toolChain id="com.ti.ccstudio.buildDefinitions.C6000_7.2.library.ReleaseToolchain.82412680" name="TI Code Generation Tools" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.library.ReleaseToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C6000_7.2.library.librarianRelease.2141308613">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.1214073666" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=com.ti.ccstudio.deviceModel.C6000.GenericC64xPlusDevice"/>
+<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
+<listOptionValue builtIn="false" value="OUTPUT_FORMAT=ELF"/>
+<listOptionValue builtIn="false" value="CCS_MBS_VERSION=4.2.0"/>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE="/>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY="/>
+<listOptionValue builtIn="false" value="IS_ELF=false"/>
+<listOptionValue builtIn="false" value="PROJECT_KIND=com.ti.ccstudio.managedbuild.core.ProjectKind_StaticLibrary"/>
+<listOptionValue builtIn="false" value="IS_ASSEMBLY_ONLY=false"/>
+<listOptionValue builtIn="false" value="OUTPUT_TYPE=staticLibrary"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.1818878128" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="7.2.0B1" valueType="string"/>
+<tool id="com.ti.ccstudio.buildDefinitions.C6000_7.2.library.compilerRelease.1782482287" name="C6000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.library.compilerRelease">
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.DIAG_WARNING.905604755" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.DIAG_WARNING" valueType="stringList">
+<listOptionValue builtIn="false" value="225"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.SILICON_VERSION.117256240" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.SILICON_VERSION" value="6600" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.INCLUDE_PATH.119728476" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.ABI.643184493" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.ABI" value="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.ABI.eabi" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.OPT_LEVEL.library.release.608479142" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.OPT_LEVEL.library.release" value="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.OPT_LEVEL._none" valueType="enumerated"/>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.C6000_7.2.library.librarianRelease.2141308613" name="C6000 Archiver" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.library.librarianRelease"/>
+<macros expandEnvironmentMacros="true"/>
+</toolChain>
+</configuration>
+<macros/>
+</project>
+</ManagedProjectBuildInfo>

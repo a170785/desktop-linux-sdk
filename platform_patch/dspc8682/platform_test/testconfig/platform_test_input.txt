@@ -1,0 +1,28 @@
+init_pll   = 1
+init_ddr   = 1
+init_uart   = 1
+init_tcsl   = 1
+init_phy    = 1
+init_ecc  = 1
+
+print_info            = 1
+print_current_core_id = 1
+print_switch_state    = 1
+test_eeprom           = 0
+test_nand             = 0
+test_nor              = 0
+test_led              = 1
+test_uart             = 1
+run_external_memory_test = 1
+run_internal_memory_test = 1
+
+init_config_pll1_pllm     = 0
+init_config_uart_baudrate = 115200
+
+nand_test_block_number = 1000
+nor_test_sector_number = 10
+led_test_loop_count = 1 
+led_test_loop_delay = 2000000
+ext_mem_test_base_addr = 0x80000000
+ext_mem_test_length    = 0x3fffffff
+int_mem_test_core_id   = 2

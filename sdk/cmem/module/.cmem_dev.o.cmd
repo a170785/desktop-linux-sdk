@@ -1,0 +1,1 @@
+cmd_/home/aav/magicA/desktop-linux-sdk/sdk/cmem/module/cmem_dev.o := ld -m elf_i386   -r -o /home/aav/magicA/desktop-linux-sdk/sdk/cmem/module/cmem_dev.o /home/aav/magicA/desktop-linux-sdk/sdk/cmem/module/cmem.o 

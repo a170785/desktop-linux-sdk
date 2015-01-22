@@ -1,0 +1,18 @@
+#typedef struct _boot_cfg_t {
+#    uint32_t config_dsp_addr;        /* DSP address where the boot configuration
+#                                       will be copied */ 
+  0x800000
+#    uint32_t config_size_b;          /* Length of configuration structure in  bytes */
+  0x10
+#    void *config_p;                  /* Pointer to config structure */
+# typedef struct {
+#  uint32_t magic_number;
+  0xbabeface
+#  uint32_t dsp_number;
+  0x8
+#  uint32_t dummy2;
+  0x12345678
+#  uint32_t dummy3;
+  0x90abcdef
+#} filetest_boot_config_t;
+#} boot_cfg_t;

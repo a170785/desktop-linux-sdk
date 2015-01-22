@@ -1,0 +1,21 @@
+/******************************************************************************
+ * FILE PURPOSE: Configuration Script for the platform lib
+ ******************************************************************************
+ * FILE NAME: config.bld
+ *
+ * DESCRIPTION: 
+ *  This file contains the build configuration script for platform lib
+ *  and is responsible for configuration of the paths for the various tools
+ *  required to build platform lib.
+ *
+ * Copyright (C) 2011, Texas Instruments, Inc.
+ *****************************************************************************/
+
+var toolsBaseDir = java.lang.System.getenv("XDCCGROOT");
+
+var C66LE          = xdc.useModule('ti.targets.elf.C66');
+C66LE.rootDir       = toolsBaseDir;
+
+var C66BE          = xdc.useModule('ti.targets.elf.C66_big_endian');
+C66BE.rootDir       = toolsBaseDir;
+

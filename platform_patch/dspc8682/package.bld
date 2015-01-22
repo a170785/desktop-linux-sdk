@@ -1,0 +1,12 @@
+/******************************************************************************
+ * FILE PURPOSE: Build description for the platform Package
+ ******************************************************************************
+ * FILE NAME: package.bld
+ *
+ * DESCRIPTION: 
+ *  This file contains the build specification and description for the platform
+ * library
+ *  
+ *
+ * Copyright (C) 2011, Texas Instruments, Inc.
+ *****************************************************************************/

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?fileVersion 3.1.0?>
+
+<ManagedProjectBuildInfo>
+<project id="platform_utils_test_dspc8682.com.ti.ccstudio.buildDefinitions.C6000.ProjectType.1733924396" name="C6000" projectType="com.ti.ccstudio.buildDefinitions.C6000.ProjectType">
+<configuration artifactExtension="out" artifactName="../../bin/platform_utils_test_dspc8682" description="" id="com.ti.ccstudio.buildDefinitions.C6000.Debug.232210618" name="Debug" parent="com.ti.ccstudio.buildDefinitions.C6000.Debug" postbuildStep="">
+<toolChain id="com.ti.ccstudio.buildDefinitions.C6000_7.2.exe.DebugToolchain.71699519" name="TI Code Generation Tools" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.exe.DebugToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C6000_7.2.exe.linkerDebug.2144979300">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.1510996237" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=com.ti.ccstudio.deviceModel.C6000.CustomC6000Device"/>
+<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
+<listOptionValue builtIn="false" value="OUTPUT_FORMAT=ELF"/>
+<listOptionValue builtIn="false" value="CCS_MBS_VERSION=4.2.0"/>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE="/>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY=rts6600_elf.lib"/>
+<listOptionValue builtIn="false" value="PROJECT_KIND=com.ti.ccstudio.managedbuild.core.ProjectKind_Executable"/>
+<listOptionValue builtIn="false" value="OUTPUT_TYPE=executable"/>
+<listOptionValue builtIn="false" value="IS_ASSEMBLY_ONLY=false"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.44476923" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="7.2.0B1" valueType="string"/>
+<tool id="com.ti.ccstudio.buildDefinitions.C6000_7.2.exe.compilerDebug.1553530570" name="C6000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.exe.compilerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.DIAG_WARNING.1749530044" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.DIAG_WARNING" valueType="stringList">
+<listOptionValue builtIn="false" value="225"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.SILICON_VERSION.465798698" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.SILICON_VERSION" value="6600" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.PREPROC_MODE.1588523573" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.PREPROC_MODE" value="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.PREPROC_MODE.manual" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.INCLUDE_PATH.1526185424" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;../../../../inc&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${TI_PDK_INSTALL_DIR}/packages/ti/csl/&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.ABI.697220842" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.ABI" value="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.ABI.eabi" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.DIRECTORY_MODE.1697844272" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.DIRECTORY_MODE" value="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.DIRECTORY_MODE.manual" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.OBJ_DIRECTORY.640896564" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.compilerID.OBJ_DIRECTORY" value="&quot;./obj&quot;" valueType="string"/>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.C6000_7.2.exe.linkerDebug.2144979300" name="C6000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.exe.linkerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.linkerID.OUTPUT_FILE.156048068" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.linkerID.OUTPUT_FILE" value="&quot;../../bin/platform_utils_test_dspc8682.out&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.linkerID.MAP_FILE.423919483" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.linkerID.MAP_FILE" value="&quot;../../bin/platform_utils_test_dspc8682.map&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.linkerID.generatedLinkerCommandFiles.434313058" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.linkerID.generatedLinkerCommandFiles" valueType="libs">
+<listOptionValue builtIn="false" value="&quot;$(GEN_CMDS_QUOTED)&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.linkerID.LIBRARY.722221506" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.linkerID.LIBRARY" valueType="libs">
+<listOptionValue builtIn="false" value="&quot;platform_utils_dspc8682.lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;rts6600_elf.lib&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.2.linkerID.SEARCH_PATH.16239678" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.2.linkerID.SEARCH_PATH" valueType="stringList">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;../../..&quot;"/>
+</option>
+</tool>
+<macros expandEnvironmentMacros="true"/>
+</toolChain>
+</configuration>
+<configuration artifactExtension="out" artifactName="../../bin/platform_utils_test_dspc8682" description="" id="com.ti.ccstudio.buildDefinitions.C6000.Debug.1154659342" name="Release" parent="com.ti.ccstudio.buildDefinitions.C6000.Debug" postbuildStep="">
+<toolChain id="com.ti.ccstudio.buildDefinitions.C6000.Debug.ToolchainPlaceholder.1987044443" superClass="com.ti.ccstudio.buildDefinitions.C6000_6.1.exe.DebugToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C6000_6.1.exe.linkerDebug.2105331374">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.568854803" name="Code Generation tools version" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="6.1.9" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.1045449915" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=com.ti.ccstudio.deviceModel.C6000.GenericC64xPlusDevice"/>
+<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE="/>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY=rts64plus.lib"/>
+<listOptionValue builtIn="false" value="IS_ASSEMBLY_ONLY=false"/>
+<listOptionValue builtIn="false" value="CCS_MBS_VERSION=4.0.1"/>
+<listOptionValue builtIn="false" value="PROJECT_KIND=com.ti.ccstudio.managedbuild.core.ProjectKind_Executable"/>
+</option>
+<tool id="com.ti.ccstudio.buildDefinitions.C6000_6.1.exe.compilerDebug.77032206" name="C6000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C6000_6.1.exe.compilerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C6000_6.1.compilerID.SILICON_VERSION.1158104704" name="Target processor version (--silicon_version, -mv)" superClass="com.ti.ccstudio.buildDefinitions.C6000_6.1.compilerID.SILICON_VERSION" value="64+" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_6.1.compilerID.INCLUDE_PATH.1564218968" name="Add dir to #include search path (--include_path, -I)" superClass="com.ti.ccstudio.buildDefinitions.C6000_6.1.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;..\..\..\inc&quot;"/>
+<listOptionValue builtIn="false" value="&quot;../inc&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_6.1.compilerID.PREINCLUDE.40947110" name="Specify a preinclude file (--preinclude)" superClass="com.ti.ccstudio.buildDefinitions.C6000_6.1.compilerID.PREINCLUDE" value="" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_6.1.compilerID.DIRECTORY_MODE.524540102" name="Mode" superClass="com.ti.ccstudio.buildDefinitions.C6000_6.1.compilerID.DIRECTORY_MODE" value="com.ti.ccstudio.buildDefinitions.C6000_6.1.compilerID.DIRECTORY_MODE.manual" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_6.1.compilerID.OBJ_DIRECTORY.1586280756" name="Object file directory (default is .) (--obj_directory, -fr)" superClass="com.ti.ccstudio.buildDefinitions.C6000_6.1.compilerID.OBJ_DIRECTORY" value="&quot;./obj&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_6.1.compilerID.PREPROC_MODE.665096916" name="Mode" superClass="com.ti.ccstudio.buildDefinitions.C6000_6.1.compilerID.PREPROC_MODE" value="com.ti.ccstudio.buildDefinitions.C6000_6.1.compilerID.PREPROC_MODE.manual" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_6.1.compilerID.DEBUGGING_MODEL.1848659600" superClass="com.ti.ccstudio.buildDefinitions.C6000_6.1.compilerID.DEBUGGING_MODEL" value="com.ti.ccstudio.buildDefinitions.C6000_6.1.compilerID.DEBUGGING_MODEL._none" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_6.1.compilerID.OPT_LEVEL.1833082546" superClass="com.ti.ccstudio.buildDefinitions.C6000_6.1.compilerID.OPT_LEVEL" value="com.ti.ccstudio.buildDefinitions.C6000_6.1.compilerID.OPT_LEVEL.2" valueType="enumerated"/>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.C6000_6.1.exe.linkerDebug.102987599" name="C6000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C6000_6.1.exe.linkerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C6000_6.1.linkerID.OUTPUT_FILE.24579046" name="Specify output file name (--output_file, -o)" superClass="com.ti.ccstudio.buildDefinitions.C6000_6.1.linkerID.OUTPUT_FILE" value="&quot;../../bin/platform_utils_test_dspc8682.out&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_6.1.linkerID.MAP_FILE.1528686123" name="Input and output sections listed into &lt;file&gt; (--map_file, -m)" superClass="com.ti.ccstudio.buildDefinitions.C6000_6.1.linkerID.MAP_FILE" value="&quot;./obj/platform_utils_test.map&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_6.1.linkerID.LIBRARY.284638169" name="Include library file or command file as input (--library, -l)" superClass="com.ti.ccstudio.buildDefinitions.C6000_6.1.linkerID.LIBRARY" valueType="libs">
+<listOptionValue builtIn="false" value="&quot;rts64plus.lib&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_6.1.linkerID.SEARCH_PATH.2063861861" name="Add &lt;dir&gt; to library search path (--search_path, -i)" superClass="com.ti.ccstudio.buildDefinitions.C6000_6.1.linkerID.SEARCH_PATH" valueType="stringList">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;..\..\..\lib\&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_6.1.linkerID.generatedLinkerCommandFiles.876959085" superClass="com.ti.ccstudio.buildDefinitions.C6000_6.1.linkerID.generatedLinkerCommandFiles" valueType="libs">
+<listOptionValue builtIn="false" value="&quot;$(GEN_CMDS_QUOTED)&quot;"/>
+</option>
+</tool>
+<macros expandEnvironmentMacros="true"/>
+</toolChain>
+</configuration>
+<macros/>
+</project>
+</ManagedProjectBuildInfo>

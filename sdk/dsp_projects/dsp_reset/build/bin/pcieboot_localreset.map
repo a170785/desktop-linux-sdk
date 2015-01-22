@@ -1,0 +1,187 @@
+******************************************************************************
+               TMS320C6x Linker Unix v7.2.4                    
+******************************************************************************
+>> Linked Thu Mar 13 17:33:00 2014
+
+OUTPUT FILE NAME:   <bin/pcieboot_localreset.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 0086e000
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  L2SRAM_0              0086e000   00000100  00000080  00000080  RW X
+  L2SRAM                0086e100   00001e00  00000fbc  00000e44  RW X
+  L2SRAM_BOOT_ENTRY_LOC 0087fffc   00000004  00000004  00000000  RW X  ffffffff
+  L1PSRAM               00e00000   00007fff  00000000  00007fff  RW X
+  L1DSRAM               00f00000   00007fff  00000000  00007fff  RW X
+  MSMCSRAM              0c000000   00200000  00000000  00200000  RW X
+  DDR3                  80000000   10000000  00000000  10000000  RW X
+
+
+SEGMENT ALLOCATION MAP
+
+run origin  load origin   length   init length attrs members
+----------  ----------- ---------- ----------- ----- -------
+0086e000    0086e000    00000080   00000080    r-x
+  0086e000    0086e000    00000080   00000080    r-x .text:_c_int00
+0086e100    0086e100    00000b80   00000b80    r-x
+  0086e100    0086e100    00000b80   00000b80    r-x .text
+0086ec80    0086ec80    00000400   00000000    rw-
+  0086ec80    0086ec80    00000400   00000000    rw- .stack
+0086f080    0086f080    00000014   00000014    rw-
+  0086f080    0086f080    00000014   00000014    rw- .fardata
+0086f094    0086f094    00000028   00000028    r--
+  0086f094    0086f094    00000028   00000028    r-- .cinit
+0087fffc    0087fffc    00000004   00000004    r--
+  0087fffc    0087fffc    00000004   00000004    r-- $fill000
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.text:_c_int00 
+*          0    0086e000    00000080     
+                  0086e000    00000080     rts6600_elf.lib : boot.obj (.text:_c_int00)
+
+.text      0    0086e100    00000b80     
+                  0086e100    00000500     main.obj (.text)
+                  0086e600    00000180     rts6600_elf.lib : copy_decompress_rle.obj (.text:__TI_decompress_rle_core)
+                  0086e780    00000180                     : autoinit.obj (.text:_auto_init_elf)
+                  0086e900    00000100                     : cpy_tbl.obj (.text:copy_in)
+                  0086ea00    000000e0                     : exit.obj (.text:exit)
+                  0086eae0    000000a0                     : memcpy64.obj (.text:memcpy)
+                  0086eb80    00000040                     : args_main.obj (.text:_args_main)
+                  0086ebc0    00000020                     : tdeh_init.obj (.text:__tdeh_init)
+                  0086ebe0    00000020                     : _lock.obj (.text:_nop)
+                  0086ec00    00000020                     : exit.obj (.text:abort)
+                  0086ec20    00000020                     : copy_decompress_none.obj (.text:decompress:none:__TI_decompress_none)
+                  0086ec40    00000020                     : copy_decompress_rle.obj (.text:decompress:rle24:__TI_decompress_rle24)
+                  0086ec60    00000020     main.obj (.text:hwWbInvL1DInline)
+
+.stack     0    0086ec80    00000400     UNINITIALIZED
+                  0086ec80    00000008     rts6600_elf.lib : boot.obj (.stack)
+                  0086ec88    000003f8     --HOLE--
+
+.fardata   0    0086f080    00000014     
+                  0086f080    0000000c     rts6600_elf.lib : exit.obj (.fardata)
+                  0086f08c    00000008                     : _lock.obj (.fardata)
+
+.cinit     0    0086f094    00000028     
+                  0086f094    00000015     (.cinit..fardata.load) [load image, compression = rle]
+                  0086f0a9    00000003     --HOLE-- [fill = 0]
+                  0086f0ac    00000008     (__TI_handler_table)
+                  0086f0b4    00000008     (__TI_cinit_table)
+
+$fill000   0    0087fffc    00000004     
+                  0087fffc    00000004     --HOLE-- [fill = ffffffff]
+
+
+LINKER GENERATED COPY TABLES
+
+__TI_cinit_table @ 0086f0b4 records: 1, size/record: 8, table size: 8
+	.fardata: load addr=0086f094, load size=00000015 bytes, run addr=0086f080, run size=00000014 bytes, compression=rle
+
+
+LINKER GENERATED HANDLER TABLE
+
+__TI_handler_table @ 0086f0ac records: 2, size/record: 4, table size: 8
+	index: 0, handler: __TI_decompress_rle24
+	index: 1, handler: __TI_decompress_none
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+0086ec00   C$$EXIT
+0086f0b4   __TI_CINIT_Base
+0086f0bc   __TI_CINIT_Limit
+0086f0ac   __TI_Handler_Table_Base
+0086f0b4   __TI_Handler_Table_Limit
+0086f080   __TI_STACK_END
+00000400   __TI_STACK_SIZE
+00000000   __TI_STATIC_BASE
+00000001   __TI_args_main
+0086ec20   __TI_decompress_none
+0086ec40   __TI_decompress_rle24
+0086f088   __TI_enable_exit_profile_output
+ffffffff   __TI_pprof_out_hndl
+ffffffff   __TI_prof_data_size
+ffffffff   __TI_prof_data_start
+ffffffff   __binit__
+ffffffff   __c_args__
+0086ebc0   __tdeh_init
+0086eb80   _args_main
+0086e780   _auto_init_elf
+0086e000   _c_int00
+0086f080   _cleanup_ptr
+0086f084   _dtors_ptr
+0086f08c   _lock
+0086ebe0   _nop
+0086ec80   _stack
+0086f090   _unlock
+0086ec00   abort
+ffffffff   binit
+0086e900   copy_in
+0086ea00   exit
+0086e2c8   hwIntctlRoute
+0086ec60   hwWbInvL1DInline
+0086e380   idle_till_wakeup
+0086e5c4   main
+0086eae0   memcpy
+0086e574   resetMARSettings
+0086e474   resetMPAXSettings
+0086e290   wait_and_start
+0086e414   wait_for_interrupt
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000000   __TI_STATIC_BASE
+00000001   __TI_args_main
+00000400   __TI_STACK_SIZE
+0086e000   _c_int00
+0086e290   wait_and_start
+0086e2c8   hwIntctlRoute
+0086e380   idle_till_wakeup
+0086e414   wait_for_interrupt
+0086e474   resetMPAXSettings
+0086e574   resetMARSettings
+0086e5c4   main
+0086e780   _auto_init_elf
+0086e900   copy_in
+0086ea00   exit
+0086eae0   memcpy
+0086eb80   _args_main
+0086ebc0   __tdeh_init
+0086ebe0   _nop
+0086ec00   C$$EXIT
+0086ec00   abort
+0086ec20   __TI_decompress_none
+0086ec40   __TI_decompress_rle24
+0086ec60   hwWbInvL1DInline
+0086ec80   _stack
+0086f080   __TI_STACK_END
+0086f080   _cleanup_ptr
+0086f084   _dtors_ptr
+0086f088   __TI_enable_exit_profile_output
+0086f08c   _lock
+0086f090   _unlock
+0086f0ac   __TI_Handler_Table_Base
+0086f0b4   __TI_CINIT_Base
+0086f0b4   __TI_Handler_Table_Limit
+0086f0bc   __TI_CINIT_Limit
+ffffffff   __TI_pprof_out_hndl
+ffffffff   __TI_prof_data_size
+ffffffff   __TI_prof_data_start
+ffffffff   __binit__
+ffffffff   __c_args__
+ffffffff   binit
+
+[40 symbols]
